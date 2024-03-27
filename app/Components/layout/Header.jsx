@@ -7,7 +7,7 @@ import ThemeButton from '../UI/ThemeButton'
 const Header = () => {
   return (
     <header>
-      <nav className=' bg-slate-500 p-6'>
+      <nav className=' flex  justify-between p-6'>
         <ul className=' container flex gap-4'>
           <li>
             <NavLinks href='/'>home</NavLinks>
