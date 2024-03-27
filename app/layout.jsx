@@ -5,7 +5,7 @@ import Header from './Components/layout/Header'
 // import Footer from './Components/layout/Footer'
 // import Footer from '@/app/Components/layout/Footer'
 import Footer from '@/components/layout/Footer'
-import { ThemeProvider, useTheme } from 'next-themes'
+import Providers from './Providers'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,9 +17,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <Header />
-        <main>{children}</main>
-        <Footer></Footer>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer></Footer>
+        </Providers>
       </body>
     </html>
   )

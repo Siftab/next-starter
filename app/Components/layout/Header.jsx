@@ -2,6 +2,7 @@ import NavLinks from '@/app/Components/UI/NavLinks'
 import Link from 'next/link'
 import React from 'react'
 import ContactButton from '../UI/ContactButton'
+import ThemeButton from '../UI/ThemeButton'
 
 const Header = () => {
   return (
@@ -18,6 +19,7 @@ const Header = () => {
             <ContactButton />
           </li>
         </ul>
+        <ThemeButton></ThemeButton>
       </nav>
     </header>
   )
